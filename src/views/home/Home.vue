@@ -1,20 +1,30 @@
 <template>
   <div>
-    这是主页
+    <NavBar></NavBar>
+    <Search></Search>
   </div>
 </template>
 
 <script lang="ts">
 
 import { Component, Vue } from 'vue-property-decorator';
+import NavBar from '@/components/nav/Nav.vue';
+import Search from '@/views/home/Search.vue';
 
-@Component({})
+@Component({
+  components: {
+    NavBar,
+    Search,
+  },
+})
 
-export default class Home extends Vue {
+class Home extends Vue {
 
 }
+
+export default Home;
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 
 </style>

@@ -1,0 +1,80 @@
+/* Created by william on 2019/8/2 16:30 */
+/* Updated by william on 2019/8/2 16:30 */
+$baseColor: #f5004b;
+$bgColor: #f8f8f8;
+
+$baseFontColor: #666;
+$fontColor: #999;
+$darkFontColor: #343434;
+$highFontColor: #CCC;
+
+
+$baseFontSize: 14px;
+$smallFontSize: $baseFontSize - 2px;
+$mdFontSize: $baseFontSize + 2px;
+$largeFontSize: $baseFontSize + 4px;
+$superFontSize: $baseFontSize + 8px;
+
+
+@mixin resetStyle {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin ulStyle {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin SearchInput($w, $h, $border, $radius, $font, $color, $paddingLeft) {
+  width: $w;
+  height: $h;
+  line-height: $h;
+  border: $border;
+  border-radius: $radius;
+  outline: none;
+  box-shadow: none;
+  font-size: $font;
+  color: $color;
+  padding: 0;
+  padding-left: $paddingLeft;
+  margin: 0;
+}
+
+@mixin ClearFloat {
+  &:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+
+@mixin MarginTopOverflow {
+  &:before {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin button($w, $h, $radius, $background, $color, $font) {
+  display: inline-block;
+  width: $w;
+  height: $h;
+  margin: 0;
+  padding: 0;
+  line-height: $h;
+  border: 0;
+  border-radius: $radius;
+  background: $background;
+  color: $color;
+  outline: none;
+  box-shadow: none;
+  text-align: center;
+  font-size: $font;
+}
+
+* {
+  box-sizing: border-box;
+}

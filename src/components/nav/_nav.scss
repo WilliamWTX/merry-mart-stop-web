@@ -1,0 +1,39 @@
+/* Created by william on 2019/8/2 16:28 */
+/* Updated by william on 2019/8/2 16:28 */
+.nav {
+  height: 30px;
+  line-height: 30px;
+  background: $bgColor;
+  &__content {
+    width: 1200px;
+    color: $fontColor;
+    font-size: $smallFontSize;
+    margin: 0 auto;
+
+    &__content:after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+
+    &__left {
+      float: left;
+
+      &__login {
+        padding-right: 10px;
+      }
+    }
+
+    &__right {
+      float: right;
+      ul, li {
+        @include ulStyle;
+      }
+
+      li {
+        display: inline-block;
+        padding: 0 6px;
+      }
+    }
+  }
+}
