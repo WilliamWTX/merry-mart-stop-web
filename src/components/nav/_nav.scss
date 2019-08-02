@@ -4,6 +4,7 @@
   height: 30px;
   line-height: 30px;
   background: $bgColor;
+
   &__content {
     width: 1200px;
     color: $fontColor;
@@ -26,6 +27,7 @@
 
     &__right {
       float: right;
+
       ul, li {
         @include ulStyle;
       }
